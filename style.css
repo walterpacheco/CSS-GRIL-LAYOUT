@@ -4,12 +4,16 @@ body{
 }
 
 .layout{
+    width: 1200px;
+    height: 600px;
+    margin: 0px auto;
     /*Esto es definir el grid layout*/
     display: grid;
     /*grid-template-columns: repeat(2, calc(25% - 10px)) 15% 35%;*/
     /*grid-template-columns: 1fr 1fr 1fr  1fr;*/
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     /*Espacio entre elementos grid*/
+    grid-template-rows: 1fr 1fr 2fr 1fr;
     grid-gap: 10px;
     padding: 10px;
     border: 3px solid orangered;
@@ -24,17 +28,39 @@ body{
 }
 
 .red{
+    grid-column-start: 1;
+    grid-column-end: 4;
     background-color: red;
 }
 
 .blue{
+    grid-column: 2/ 4;
     background-color: blue;
 }
 
 .green{
+    grid-row: 2 / 6;
     background-color: green;
 }
 
 .pink{
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
     background-color: pink;
+}
+
+.orange{
+    grid-column: 3/4;
+    grid-row: 3 / 5;
+    background-color: orange;
+}
+
+.lightblue{
+    /*
+    grid-column-start: 1;
+    grid-column-end: 3;
+    */
+
+    grid-column: 2 / 4;
+    background-color: lightblue;
 }
