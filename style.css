@@ -6,8 +6,9 @@ body{
 .layout{
     /*Esto es definir el grid layout*/
     display: grid;
-    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
-    
+    /*grid-template-columns: repeat(2, calc(25% - 10px)) 15% 35%;*/
+    /*grid-template-columns: 1fr 1fr 1fr  1fr;*/
+    grid-template-columns: repeat(4, 1fr);
     /*Espacio entre elementos grid*/
     grid-gap: 10px;
     padding: 10px;
